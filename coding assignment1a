@@ -1,0 +1,68 @@
+package assignment1a;
+
+import java.util.Scanner;
+
+public class C_MARTS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner (System.in);
+        
+        
+        System.out.println("Enter the number of items :");
+        int item = sc.nextInt();
+       
+        
+        System.out.println("Enter the price of first item :");
+        int price1 = sc.nextInt();
+       
+        
+        System.out.println("Enter quantity of first item :");
+        int quantity1 = sc.nextInt();
+        double amount1 = price1 = price1 * quantity1;
+        
+        		
+        System.out.println("Enter price of second item : RM");
+        int price2 = sc.nextInt();
+        System.out.println("Enter quantity of second item : ");
+        int quantity2 = sc.nextInt();
+        double amount2 = price2 * quantity2;
+        
+  		
+        System.out.println("Enter price of third item : RM");
+        int price3 = sc.nextInt();
+        System.out.println("Enter quantity of third item : ");
+        int quantity3 = sc.nextInt();
+        double amount3 = price3 * quantity3;
+        
+        double amount = amount1 + amount2 + amount3;
+        
+        if (amount>100);
+        {
+        
+        
+        double discount = (amount*0.2);
+        double a = amount - discount;
+        System.out.printf("Total price : RM%.2f%n " , amount);
+        System.out.printf("Discount received : RM%.2f%n " , discount);
+        System.out.printf("Price to be paid : RM%.2f%n " , a);
+        
+        }
+        
+        if (amount<100);
+        
+        {
+        
+        double discount = (amount*0.1);
+        double a = amount - discount;
+        System.out.printf("Total price : RM%.2f%n " , amount);
+        System.out.printf("Discount received : RM%.2f%n " , discount);
+        System.out.printf("Price to be paid : RM%.2f%n " , a);
+        
+        }
+     
+        
+        
+	}
+
+}
